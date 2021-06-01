@@ -1,0 +1,10 @@
+{
+  "data": {
+    "attributes": {
+      "name": "new-construction-api",
+      "version_pins": {
+        "mvn-service://new-construction-api": "0.0.253-feature_NC-6595.8d268cd~nc1.6312a66"
+      }
+    }
+  }
+}
