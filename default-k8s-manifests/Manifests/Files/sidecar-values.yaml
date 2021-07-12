@@ -1,8 +1,8 @@
 name: harness-example
 replicas: 1
 
-image: <+service.artifacts.sidecars.sidecar.imagePath>
-dockercfg: <+service.artifacts.sidecars.sidecar.imagePullSecret>
+image: <+artifacts.sidecars.sidecar.imagePath>
+dockercfg: <+artifacts.sidecars.sidecar.imagePullSecret>
 
 createNamespace: true
 namespace: <+infra.namespace>
