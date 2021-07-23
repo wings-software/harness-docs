@@ -1,3 +1,4 @@
+/*
 terraform {
   required_version = "~>0.12"
   backend "remote" {
@@ -7,6 +8,7 @@ terraform {
     }
   }
 }
+*/
 
 resource "google_container_cluster" "primary" {
   name               = var.cluster
