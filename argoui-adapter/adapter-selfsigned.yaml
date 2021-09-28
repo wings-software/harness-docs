@@ -76,3 +76,6 @@ spec:
           httpGet:
             path: /healthz?full=true
             port: 8080
+            scheme: HTTPS
+          initialDelaySeconds: 3
+          periodSeconds: 30
