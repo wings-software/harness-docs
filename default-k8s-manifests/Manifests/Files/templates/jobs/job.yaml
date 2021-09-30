@@ -1,4 +1,3 @@
-# harness.io/skip-file-for-deploy
 apiVersion: batch/v1
 kind: Job
 metadata:
