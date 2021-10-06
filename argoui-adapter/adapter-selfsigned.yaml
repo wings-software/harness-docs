@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
 data:
   ARGO_CD_URL: <ArgoCdServerURL>
-  ALLOWED_ORIGINS: https://app.harness.io,https://localhost
+  ALLOWED_ORIGINS: https://app.harness.io
 
 ---
 apiVersion: v1
