@@ -1,0 +1,22 @@
+# harness.io/skip-file-for-deploy
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{.Values.name}}-svc-stage
+  
+  labels:
+    app: {{.Values.name}}
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+
+    # Enable canary and send 50% of traffic to version 2
+    nginx.ingress.kubernetes.io/canary: "true"
+    nginx.ingress.kubernetes.io/canary-weight: "50"
+spec:
+  rules:
+  - host: {{.Values.name}}.com
+    http:
+      paths:
+      - backend:
+          serviceName: {{.Values.name}}-svc-stage
+          servicePort: 80
