@@ -2,7 +2,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: {{.Values.name}}-svc
+  name: {{.Values.name}}-svc-canary
   
   labels:
     app: {{.Values.name}}
@@ -18,5 +18,5 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: {{.Values.name}}-svc
+          serviceName: {{.Values.name}}-svc-canary
           servicePort: 80
