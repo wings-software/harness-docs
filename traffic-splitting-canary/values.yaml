@@ -1,4 +1,4 @@
-name: example
+name: split
 replicas: 4
 
 image: nginx
