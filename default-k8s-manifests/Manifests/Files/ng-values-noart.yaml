@@ -1,4 +1,4 @@
-name: example
+name: <+stage.variables.name>
 replicas: 2
 
 image: nginx
