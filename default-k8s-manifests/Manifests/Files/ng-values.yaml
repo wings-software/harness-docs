@@ -1,4 +1,4 @@
-name: <+stage.variables.name>
+name: example
 replicas: 2
 
 image: <+artifact.image>
