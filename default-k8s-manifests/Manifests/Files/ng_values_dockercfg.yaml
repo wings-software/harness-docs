@@ -1,4 +1,4 @@
-name: harness-example
+name: harness-quickstart
 replicas: 1
 
 image: <+artifact.image>
