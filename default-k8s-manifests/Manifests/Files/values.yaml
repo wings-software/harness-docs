@@ -25,4 +25,4 @@ env:
   config:
     key1: value10
   secrets:
-    key2: value2
+    key2: <+secrets.getValue("testsecret")>
