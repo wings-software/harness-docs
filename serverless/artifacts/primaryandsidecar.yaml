@@ -1,0 +1,12 @@
+service: aws-nodejs-new-1-for-testing-piyushq
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+    
+functions:
+  hello:
+    image: <+artifact.image>
+  hello1:
+    image: <+sidecar.artifact.second>
