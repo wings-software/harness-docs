@@ -1,0 +1,9 @@
+{
+  "releaseTag": "k8s-v0.3",
+  "cluster": {
+    "name": "cluster1",
+    "address": "https://104.198.73.217"
+  },
+  "pathSuffix": "dev",
+  "hello": "asd"
+}
