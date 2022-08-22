@@ -5,21 +5,21 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/wings-software/anshul-local-gitsync.git
-      revision: br-release-repo
+      repoURL: https://github.com/wings-software/harness-docs.git
+      revision: HEAD
       files:
-      - path: "vanilla-k8s/app1/*/*/config.json"
+      - path: "gitops-appset-ex/vanilla-k8s/app1/*/*/config.json"
   template:
     metadata:
       name: 'vanilla-k8s-app1-{{cluster.name}}'
     spec:
       project: b062fb30
       source:
-        repoURL: https://github.com/wings-software/anshul-test.git
+        repoURL: https://github.com/wings-software/harness-docs.git
         targetRevision: '{{releaseTag}}'
-        path: "vanilla-k8s/apps/app1/{{pathSuffix}}"
+        path: "gitops-appset-ex/vanilla-k8s/apps/app1/{{pathSuffix}}"
       destination:
         server: '{{cluster.address}}'
-        namespace: br-agent
+        namespace: default
       syncPolicy:
         automated: {}
