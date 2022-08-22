@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: vanilla-k8s-app1
+spec:
+  generators:
+  - git:
+      repoURL: https://github.com/wings-software/anshul-local-gitsync.git
+      revision: br-release-repo
+      files:
+      - path: "vanilla-k8s/app1/*/*/config.json"
+  template:
+    metadata:
+      name: 'vanilla-k8s-app1-{{cluster.name}}'
+    spec:
+      project: b062fb30
+      source:
+        repoURL: https://github.com/wings-software/anshul-test.git
+        targetRevision: '{{releaseTag}}'
+        path: "vanilla-k8s/apps/app1/{{pathSuffix}}"
+      destination:
+        server: '{{cluster.address}}'
+        namespace: br-agent
+      syncPolicy:
+        automated: {}
