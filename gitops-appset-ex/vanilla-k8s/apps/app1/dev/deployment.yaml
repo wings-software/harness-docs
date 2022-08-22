@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vanilla-k8s-deployment-dev
+  labels:
+    app: nginx
+    apptype: vanilla-k8s
+    env: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+      env: dev
+      apptype: vanilla-k8s
+  template:
+    metadata:
+      labels:
+        app: nginx
+        env: dev
+        apptype: vanilla-k8s
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.16
+        ports:
+        - containerPort: 80
