@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vanilla-k8s-app-qa
+  labels:
+    apptype: vanilla-k8s
+    env: qa
+data:
+  altGreeting: "Good Morning!"
+  enableRisky: "false"
+  tag: v0.3-qa
+  apptype: vanilla-k8s
