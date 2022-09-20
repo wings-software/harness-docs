@@ -1,0 +1,19 @@
+inputSet:
+  identifier: "gitsyc"
+  name: "gitsyc"
+  orgIdentifier: "default"
+  projectIdentifier: "Git_Sync"
+  pipeline:
+    identifier: "gitsync"
+    stages:
+    - stage:
+        identifier: "gitsync"
+        type: "Deployment"
+        spec:
+          infrastructure:
+            environmentRef: "dev"
+            infrastructureDefinition:
+              type: "KubernetesDirect"
+              spec:
+                connectorRef: "Kubernetes"
+                namespace: "default"
