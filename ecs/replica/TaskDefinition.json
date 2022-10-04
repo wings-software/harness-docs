@@ -1,0 +1,33 @@
+{
+  "containerDefinitions" : [ {
+    "name" : "myapp",
+    "image" : "<+artifact.image>",
+    "cpu" : 1,
+    "memory" : 1000,
+    "links" : [ ],
+    "portMappings" : [ ],
+    "entryPoint" : [ ],
+    "command" : [ ],
+    "environment" : [ ],
+    "environmentFiles" : [ ],
+    "mountPoints" : [ ],
+    "volumesFrom" : [ ],
+    "dependsOn" : [ ],
+    "dnsServers" : [ ],
+    "dnsSearchDomains" : [ ],
+    "extraHosts" : [ ],
+    "dockerSecurityOptions" : [ ],
+    "ulimits" : [ ],
+    "systemControls" : [ ],
+    "resourceRequirements" : [ ]
+  } ],
+  "executionRoleArn" : "${EXECUTION_ROLE}",
+  "volumes" : [ ],
+  "requiresAttributes" : [ ],
+  "placementConstraints" : [ ],
+  "compatibilities" : [ ],
+  "requiresCompatibilities" : [ ],
+  "cpu" : "1",
+  "memory" : "1000",
+  "inferenceAccelerators" : [ ]
+}
