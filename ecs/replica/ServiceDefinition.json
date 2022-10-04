@@ -1,0 +1,8 @@
+{
+"capacityProviderStrategy":[ ],
+"placementConstraints":[ ],
+"placementStrategy":[ ],
+"healthCheckGracePeriodSeconds":null,
+"tags":[ ],
+"schedulingStrategy":"REPLICA"
+}
