@@ -5,19 +5,19 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: https://github.com/michaelcretzman/applicationset.git
+        repoURL: https://github.com/wings-software/harness-docs.git
         revision: HEAD
         files:
-        - path: "examples/git-generator-files-discovery/cluster-config/**/config.json"
+        - path: "applicationset/examples/git-generator-files-discovery/cluster-config/**/config.json"
   template:
     metadata:
       name: '{{cluster.name}}-guestbook'
     spec:
       project: b062fb30
       source:
-        repoURL: https://github.com/michaelcretzman/applicationset.git
+        repoURL: https://github.com/wings-software/harness-docs.git
         targetRevision: HEAD
-        path: "examples/git-generator-files-discovery/apps/guestbook"
+        path: "applicationset/examples/git-generator-files-discovery/apps/guestbook"
       destination:
         server: https://kubernetes.default.svc
         #server: '{{cluster.address}}'
