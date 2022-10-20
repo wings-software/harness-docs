@@ -1,0 +1,10 @@
+{
+  "releaseTag": "k8s-v0.2",
+  "aws_account": "123456",
+  "asset_id": "11223344",
+  "cluster": {
+    "owner": "cluster-admin@company.com",
+    "name": "engineering-prod",
+    "address": "http://104.197.176.85"
+  }
+}
