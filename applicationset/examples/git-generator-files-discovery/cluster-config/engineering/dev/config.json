@@ -4,6 +4,6 @@
   "cluster": {
     "owner": "cluster-admin@company.com",
     "name": "engineering-dev",
-    "address": "http://34.66.181.43"
+    "address": "http://<dev cluster endpoint IP>"
   }
 }
