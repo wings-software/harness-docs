@@ -1,0 +1,17 @@
+template:
+  name: remote
+  identifier: remote
+  versionLabel: "1"
+  type: Step
+  projectIdentifier: CD_Docs
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: K8sDelete
+    spec:
+      deleteResources:
+        type: ResourceName
+        spec:
+          resourceNames:
+            - foo
