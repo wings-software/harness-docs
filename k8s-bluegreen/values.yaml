@@ -1,4 +1,4 @@
-name: <+stage.variables.name>
+name: k8s
 replicas: 2
 
 image: <+artifact.image>
