@@ -26,4 +26,3 @@ env:
     key1: value1
   secrets:
     key2: value2
-Footer
