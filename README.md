@@ -2,7 +2,7 @@
 
 This repo (`harness-docs`) contains examples for Harness quickstarts and other documentation.
 
-test testet
+input set test
 
 ## Links
 
