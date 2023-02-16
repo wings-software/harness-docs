@@ -1,0 +1,20 @@
+template:
+  name: test
+  identifier: test
+  versionLabel: "1.0"
+  type: Step
+  projectIdentifier: NandeeshNGUsecase
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: echo "Hi"
+      environmentVariables: []
+      outputVariables: []
