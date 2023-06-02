@@ -3,7 +3,7 @@ frameworkVersion: '2 || 3'
 
 provider:
   name: aws
-  runtime: nodejs18.x
+  runtime: nodejs14.x
 functions:
   hello:
     handler: handler.hello
