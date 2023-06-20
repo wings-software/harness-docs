@@ -1,3 +1,4 @@
+applications:
 - name: ((PCF_APP_NAME))
   memory: ((PCF_APP_MEMORY))
   instances : ((INSTANCES))
