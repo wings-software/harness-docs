@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: deploy
         identifier: deploy
-        description: ""
+        description: "This is a test."
         type: Deployment
         spec:
           deploymentType: Ssh
