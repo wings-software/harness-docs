@@ -107,9 +107,10 @@
 - PSScriptAnalyzer: 1.21.0
 
 ### Xcode
-| Version        | Build   | Path                           |
-| -------------- | ------- | ------------------------------ |
-| 15.0 (default) | 15A240d | /Applications/Xcode_15.0.1.app |
+| Version        | Build   | Path                         |
+|----------------|---------|------------------------------|
+| 15.1 (default) | 15C65   | /Applications/Xcode_15.1.app |
+| 15.2           | 15C500b | /Applications/Xcode_15.2.app |
 
 #### Xcode Support Tools
 - xcpretty 0.3.0
