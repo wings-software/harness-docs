@@ -8,6 +8,3 @@ provider:
 functions:
   function1:
     handler: index.handler
-
-package:
-  artifact: /tmp/artifact.zip
