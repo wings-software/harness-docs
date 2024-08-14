@@ -1,17 +1,13 @@
-service: <+service.name>
-frameworkVersion: '2 || 3'
+service: simple-website
+frameworkVersion: '3'
 
 provider:
   name: aws
   runtime: nodejs20.x
+
 functions:
-  hello:
-    handler: handler.hello
-    events:
-      - httpApi:
-          path: /tello
-          method: get  
+  function1:
+    handler: index.handler
+
 package:
-  artifact: <+artifact.path>          
-plugins:
-  - serverless-deployment-bucket@latest
+  artifact: /tmp/artifact.zip
