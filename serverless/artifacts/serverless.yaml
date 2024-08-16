@@ -10,4 +10,13 @@ functions:
     handler: index.handler
 
 package:
-  artifact: handler1.zip
+  artifact: ./files/handler1.zip
+
+plugins:
+  - serverless-commands
+
+custom:
+  commands:
+    prepackage: 
+      - mkdir -p ./files
+      - cp /Users/abhinavhinger/files/handler1.zip ./files/handler1.zip
