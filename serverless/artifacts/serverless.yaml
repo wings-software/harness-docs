@@ -10,4 +10,4 @@ functions:
     handler: index.handler
 
 package:
-  artifact: /Users/abhinavhinger/files/handler1.zip
+  artifact: handler1.zip
