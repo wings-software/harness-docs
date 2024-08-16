@@ -8,3 +8,6 @@ provider:
 functions:
   function1:
     handler: index.handler
+
+package:
+  artifact: /Users/abhinavhinger/files/handler1.zip
