@@ -2,3 +2,4 @@ name: nginx
 replicas: "2"
 
 getpath: hello
+stack: <+stage.variables.stack>

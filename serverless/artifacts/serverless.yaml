@@ -1,4 +1,4 @@
-service: <+stage.variables.stack>
+service: {{.Values.stack}}
 
 provider:
   name: aws
