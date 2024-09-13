@@ -8,6 +8,7 @@ provider:
 
 custom:
   stackName: ${self:service}-${self:provider.stage}
+  packageFolder: ${opt:package-folder, '.serverless'}
 
 package:
   individually: true
@@ -18,6 +19,10 @@ package:
 functions:
   hello:
     handler: handler.hello
+    package:
+      patterns:
+        - '!**/*'
+        - 'handler.js'
     events:
       - http:
           path: {{.Values.getpath}}
