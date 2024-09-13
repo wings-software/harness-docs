@@ -2,7 +2,7 @@ service: my-serverless-project
 
 provider:
   name: aws
-  runtime: nodejs14.x
+  runtime: nodejs18.x
   stage: ${opt:stage, 'dev'}
   region: ${opt:region, 'us-east-1'}
 
@@ -22,8 +22,23 @@ functions:
       - http:
           path: hello
           method: get
+          cors: true
 
 resources:
   Outputs:
     StackName:
       Value: ${self:custom.stackName}
+    ApiGatewayUrl:
+      Value:
+        Fn::Join:
+          - ""
+          - - "https://"
+            - Ref: ApiGatewayRestApi
+            - ".execute-api.${self:provider.region}.amazonaws.com/${self:provider.stage}"
+    HelloFunctionUrl:
+      Value:
+        Fn::Join:
+          - ""
+          - - "https://"
+            - Ref: ApiGatewayRestApi
+            - ".execute-api.${self:provider.region}.amazonaws.com/${self:provider.stage}/hello"
