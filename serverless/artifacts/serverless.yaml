@@ -1,13 +1,29 @@
-service: simple-website
-frameworkVersion: '3'
+service: my-serverless-project
 
 provider:
   name: aws
-  runtime: nodejs20.x
+  runtime: nodejs14.x
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'us-east-1'}
 
-functions:
-  function1:
-    handler: index.handler
+custom:
+  stackName: ${self:service}-${self:provider.stage}
 
 package:
-  artifact: handler1.zip
+  individually: true
+  patterns:
+    - '!**/*'
+    - 'handler.js'
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
+
+resources:
+  Outputs:
+    StackName:
+      Value: ${self:custom.stackName}
