@@ -1,4 +1,4 @@
-service: my-serverless-project
+service: <+stage.variables.stack>
 
 provider:
   name: aws
@@ -20,7 +20,7 @@ functions:
     handler: handler.hello
     events:
       - http:
-          path: hello
+          path: {{.Values.getpath}}
           method: get
           cors: true
 

@@ -1,0 +1,4 @@
+name: nginx
+replicas: "2"
+
+getpath: hello
