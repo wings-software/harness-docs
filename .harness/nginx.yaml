@@ -4,5 +4,21 @@ service:
   orgIdentifier: default
   projectIdentifier: Manisha
   serviceDefinition:
-    spec: {}
+    spec:
+      manifests:
+        - manifest:
+            identifier: bluegreen
+            type: K8sManifest
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: bgdeployconnector
+                  gitFetchType: Branch
+                  paths:
+                    - /k8s-bluegreen/two-services /templates/
+                  repoName: harness-docs
+                  branch: main
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
     type: Kubernetes
