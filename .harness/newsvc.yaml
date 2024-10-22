@@ -3,3 +3,35 @@ service:
   identifier: newsvc
   orgIdentifier: default
   projectIdentifier: Manisha
+  serviceDefinition:
+    spec:
+      manifests:
+        - manifest:
+            identifier: manifest
+            type: K8sManifest
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: bgdeployconnector
+                  gitFetchType: Branch
+                  paths:
+                    - k8s-bluegreen/templates/
+                  repoName: Breadcrumbsharness-docs
+                  branch: main
+              valuesPaths:
+                - k8s-bluegreen/values.yaml
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
+      artifacts:
+        primary:
+          primaryArtifactRef: <+input>
+          sources:
+            - spec:
+                connectorRef: dockerconnector
+                imagePath: library/httpd
+                tag: latest
+                digest: ""
+              identifier: nginx
+              type: DockerRegistry
+    type: Kubernetes
