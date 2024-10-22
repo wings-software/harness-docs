@@ -1,0 +1,12 @@
+service: simple-website
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  function1:
+    handler: index.handler
+package:
+  artifact: <+HARNESS_WORKSPACE>/artifacts/handler.zip
