@@ -1,5 +1,5 @@
 pipeline:
-  name: bg-deploy
+  name: nginx
   identifier: bgdeploy
   projectIdentifier: Manisha
   orgIdentifier: default
