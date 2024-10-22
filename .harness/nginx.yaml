@@ -3,3 +3,6 @@ service:
   identifier: nginx
   orgIdentifier: default
   projectIdentifier: Manisha
+  serviceDefinition:
+    spec: {}
+    type: Kubernetes
