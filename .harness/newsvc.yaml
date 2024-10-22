@@ -17,7 +17,7 @@ service:
                   gitFetchType: Branch
                   paths:
                     - k8s-bluegreen/templates/
-                  repoName: Breadcrumbsharness-docs
+                  repoName: harness-docs
                   branch: main
               valuesPaths:
                 - k8s-bluegreen/values.yaml
