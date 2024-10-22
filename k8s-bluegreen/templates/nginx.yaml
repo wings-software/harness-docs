@@ -22,20 +22,14 @@ pipeline:
           execution:
             steps:
               - step:
-                  name: Stage Deployment
-                  identifier: stageDeployment
                   type: K8sBlueGreenDeploy
-                  timeout: 10m
+                  name: K8sBlueGreenDeploy_1
+                  identifier: K8sBlueGreenDeploy_1
                   spec:
                     skipDryRun: false
                     pruningEnabled: false
-              - step:
-                  name: Swap primary with stage service
-                  identifier: bgSwapServices
-                  type: K8sBGSwapServices
+                    skipUnchangedManifest: false
                   timeout: 10m
-                  spec:
-                    skipDryRun: false
             rollbackSteps:
               - step:
                   name: Swap primary with stage service
