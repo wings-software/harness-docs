@@ -32,15 +32,4 @@ spec:
           limits:
             memory: "{{ .Values.resources.limits.memory }}"
             cpu: "{{ .Values.resources.limits.cpu }}"
-        livenessProbe:
-          httpGet:
-            path: {{ .Values.probes.liveness.path }}
-            port: {{ .Values.app.port }}
-          initialDelaySeconds: {{ .Values.probes.liveness.initialDelaySeconds }}
-          periodSeconds: {{ .Values.probes.liveness.periodSeconds }}
-        readinessProbe:
-          httpGet:
-            path: {{ .Values.probes.readiness.path }}
-            port: {{ .Values.app.port }}
-          initialDelaySeconds: {{ .Values.probes.readiness.initialDelaySeconds }}
-          periodSeconds: {{ .Values.probes.readiness.periodSeconds }}
+        
