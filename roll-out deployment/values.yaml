@@ -21,15 +21,7 @@ strategy:
   maxSurge: 1
   maxUnavailable: 0
 
-probes:
-  liveness:
-    path: /healthz
-    initialDelaySeconds: 15
-    periodSeconds: 10
-  readiness:
-    path: /readyz
-    initialDelaySeconds: 10
-    periodSeconds: 5
+
 
 service:
   type: ClusterIP
