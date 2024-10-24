@@ -1,0 +1,27 @@
+service:
+  name: canary-svc
+  identifier: canarysvc
+  serviceDefinition:
+    type: Kubernetes
+    spec:
+      manifests:
+        - manifest:
+            identifier: canary
+            type: K8sManifest
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: githubconnector
+                  gitFetchType: Branch
+                  paths:
+                    - canary-deployment/templates/
+                  repoName: harness-docs
+                  branch: main
+              valuesPaths:
+                - canary-deployment/values.yaml
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
+  gitOpsEnabled: false
+  orgIdentifier: default
+  projectIdentifier: Manisha
