@@ -1,0 +1,36 @@
+app:
+  name: my-app
+  namespace: default
+  replicas: 3
+  port: 8080
+
+image: <+artifact.image>
+  # repository: my-repo/my-app
+  # tag: "1.0.0"
+
+
+resources:
+  requests:
+    memory: "256Mi"
+    cpu: "0.5"
+  limits:
+    memory: "512Mi"
+    cpu: "1"
+
+strategy:
+  maxSurge: 1
+  maxUnavailable: 0
+
+probes:
+  liveness:
+    path: /healthz
+    initialDelaySeconds: 15
+    periodSeconds: 10
+  readiness:
+    path: /readyz
+    initialDelaySeconds: 10
+    periodSeconds: 5
+
+service:
+  type: ClusterIP
+  port: 80
