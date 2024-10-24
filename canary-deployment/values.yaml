@@ -1,0 +1,22 @@
+app:
+  name: my-app
+  image:
+    repository: library/nginx
+    tag: latest
+  port: 8080
+
+canary:
+  replicas: 2
+
+service:
+  port: 80
+  targetPort: 8080
+  type: ClusterIP
+
+resources:
+  requests:
+    memory: "512Mi"
+    cpu: "500m"
+  limits:
+    memory: "1024Mi"
+    cpu: "1"
