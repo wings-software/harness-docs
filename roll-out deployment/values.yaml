@@ -5,8 +5,7 @@ app:
   port: 8080
 
 image: <+artifact.image>
-  # repository: my-repo/my-app
-  # tag: "1.0.0"
+
 
 
 resources:
