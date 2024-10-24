@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    harness.io/name: harness-delegate
+  name: harness-delegate
+  namespace: harness-delegate-ng
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      harness.io/name: harness-delegate
+  template:
+    metadata:
+      labels:
+        harness.io/name: harness-delegate
+    spec:
+      containers:
+      - name: delegate
+        image: harness/delegate:latest
+        env:
+        - name: ACCOUNT_ID
+          value: 
+        - name: MANAGER_HOST_AND_PORT
+          value: https://app.harness.io
+        - name: DELEGATE_NAME
+          value: harness-delegate
+        - name: INIT_SCRIPT
+          value: |
+            #!/bin/bash
+            echo "Running custom initialization script"
+            # Add custom commands here
+            apt-get update && apt-get install -y curl
+            curl https://example.com/your-script.sh | bash
+        resources:
+          requests:
+            cpu: "0.5"
+            memory: "2048Mi"
+          limits:
+            cpu: "1"
+            memory: "4096Mi"
