@@ -4,8 +4,9 @@ app:
   replicas: 3
   port: 8080
 
-image: <+artifact.image>
-
+image:
+  repository: library/nginx
+  tag: "latest"
 
 
 resources:
