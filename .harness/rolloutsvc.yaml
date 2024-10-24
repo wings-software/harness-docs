@@ -3,3 +3,35 @@ service:
   identifier: rolloutsvc
   orgIdentifier: default
   projectIdentifier: Manisha
+  serviceDefinition:
+    spec:
+      manifests:
+        - manifest:
+            identifier: rollout
+            type: K8sManifest
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: githubconnector
+                  gitFetchType: Branch
+                  paths:
+                    - roll-out deployment/templates/
+                  repoName: harness-docs
+                  branch: main
+              valuesPaths:
+                - roll-out deployment/values.yaml
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
+      artifacts:
+        primary:
+          primaryArtifactRef: <+input>
+          sources:
+            - spec:
+                connectorRef: dockerconnector
+                imagePath: library/nginx
+                tag: latest
+                digest: ""
+              identifier: rolloutsource
+              type: DockerRegistry
+    type: Kubernetes
