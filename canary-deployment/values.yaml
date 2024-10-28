@@ -6,7 +6,7 @@ app:
   port: 8080
 
 canary:
-  replicas: 2
+  replicas: 8
 
 service:
   port: 80
