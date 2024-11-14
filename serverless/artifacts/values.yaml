@@ -1,1 +1,1 @@
-artifactPath: /private/tmp/harness/<+pipeline.executionId>/harness-docs/artifacts/handler.zip
+artifactPath: /<+pipeline.stages.deployment.steps.manifests.serverless_manifest.store.path>/handler.zip
