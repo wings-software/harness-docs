@@ -1,1 +1,1 @@
-artifactPath: <+pipeline.stages.deployment.steps.artifacts.primary.get("download-path")>/handler.zip
+artifactPath: <+pipeline.stages.deployment.steps.artifacts.PLUGIN_ARTIFACT_DOWNLOAD_PATH>/handler.zip
