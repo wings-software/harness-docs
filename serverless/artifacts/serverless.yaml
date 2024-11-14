@@ -9,4 +9,4 @@ functions:
   function1:
     handler: index.handler
 package:
-  artifact: /private/tmp/harness/<+pipeline.executionId>/artifacts/handler.zip
+  artifact: {{.Values.artifactPath}}
