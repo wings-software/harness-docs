@@ -1,1 +1,1 @@
-artifactPath: /private/tmp/harness/<+pipeline.executionId>/artifacts/handler.zip
+artifactPath: /private/tmp/harness/<+pipeline.executionId>/harness-docs/artifacts/handler.zip
