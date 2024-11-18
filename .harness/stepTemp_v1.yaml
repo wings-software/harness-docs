@@ -1,0 +1,19 @@
+template:
+  name: stepTemp
+  identifier: stepTemp
+  versionLabel: v1
+  type: Step
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      executionTarget: {}
+      delegateSelectors: []
+      source:
+        type: Inline
+        spec:
+          script: echo "hey"
+      environmentVariables: []
+      outputVariables: []
