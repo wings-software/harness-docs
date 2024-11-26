@@ -1,1 +1,1 @@
-artifactPath: <+pipeline.stages.deployment.steps.artifacts.primary.get("download-path")>
+artifactPath: <+pipeline.stages.k8s_deploy.steps.artifacts.primary.get("download-path")>
