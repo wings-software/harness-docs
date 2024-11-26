@@ -71,7 +71,7 @@ pipeline:
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
-   - stage:
+    - stage:
         name: stage_4
         identifier: stage_4
         description: ""
