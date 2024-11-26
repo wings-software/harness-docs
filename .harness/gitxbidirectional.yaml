@@ -49,4 +49,26 @@ pipeline:
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
+    - stage:
+        name: stage_3
+        identifier: stage_3
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_3
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo "hey"
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
         tags: {}
