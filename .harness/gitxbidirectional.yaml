@@ -28,8 +28,8 @@ pipeline:
                     outputVariables: []
                   timeout: 10m
     - stage:
-        name: stage_1
-        identifier: stage_1
+        name: stage_2
+        identifier: stage_2
         description: ""
         type: Custom
         spec:
@@ -37,7 +37,7 @@ pipeline:
             steps:
               - step:
                   type: ShellScript
-                  name: ShellScript_1
+                  name: ShellScript_2
                   identifier: ShellScript_1
                   spec:
                     shell: Bash
