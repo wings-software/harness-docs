@@ -6,7 +6,7 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: bg-deploy
+        name: bg-deploy-new
         identifier: bgdeploy
         description: ""
         type: Deployment
