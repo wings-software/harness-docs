@@ -23,6 +23,15 @@ service:
                 - roll-out deployment/values.yaml
               skipResourceVersioning: false
               enableDeclarativeRollback: false
+        - manifest:
+            identifier: valuesnewyaml
+            type: Values
+            spec:
+              store:
+                type: Harness
+                spec:
+                  files:
+                    - /valuesnew.yaml
       artifacts:
         primary:
           primaryArtifactRef: <+input>
