@@ -1,1 +1,1 @@
-artifactPath: $HARNESS_WORKSPACE
+artifactPath: <+pipeline.stages.k8s_deploy.steps.artifacts.primary.get("download-path")>
