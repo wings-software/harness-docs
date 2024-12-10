@@ -1,4 +1,4 @@
-service: <+secrets.getValue("serverless_simple_website")>
+service: {{.Values.website}}
 frameworkVersion: '3'
 
 provider:
