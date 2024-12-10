@@ -1,1 +1,2 @@
-artifactPath: <+pipeline.stages.deployment.steps.artifacts.primary.get("download-path")>/handler.zip
+artifactPath: <+artifact.get("download-path")>
+website: <+secrets.getValue("serverless_simple_website")>

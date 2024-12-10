@@ -1,4 +1,4 @@
-service: simple-website
+service: {{.Values.website}}
 frameworkVersion: '3'
 
 provider:
