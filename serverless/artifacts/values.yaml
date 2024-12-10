@@ -1,1 +1,1 @@
-artifactPath: <+artifact.get("download-path")>
+artifactPath: <+unified.workspace>/<+artifact.get("download-path")>
