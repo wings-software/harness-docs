@@ -1,1 +1,1 @@
-artifactPath: <+primary.get("download-path")>
+artifactPath: <+artifact.get("download-path")>
