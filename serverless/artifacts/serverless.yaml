@@ -2,7 +2,7 @@ service: simple-website
 frameworkVersion: '3'
 
 provider:
-  name: aws
+  name: awsa
   runtime: nodejs18.x
 
 functions:
