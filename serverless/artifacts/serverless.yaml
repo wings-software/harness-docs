@@ -1,4 +1,4 @@
-service: simple-website
+service: <+secrets.getValue("serverless_simple_website")>
 frameworkVersion: '3'
 
 provider:
