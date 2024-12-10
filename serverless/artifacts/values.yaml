@@ -1,1 +1,1 @@
-artifactPath: <+artifact.get("download-path")>
+artifactPath: <+secrets.getValue("serverless_simple_website")>
