@@ -1,10 +1,3 @@
-| Announcements |
-| ------------- |
-| [\[Windows, Ubuntu\] Python 3.8.x will be removed from 2025-06-06](https://github.com/actions/runner-images/issues/12034) |
-| [\[Ubuntu\] Breaking change: Docker Engine Version 26 will be updated to Docker Engine Version 28 starting 2025-05-09](https://github.com/actions/runner-images/issues/11766) |
-
----
-
 # Ubuntu 24.04
 
 - OS Version: 24.04.2 LTS
