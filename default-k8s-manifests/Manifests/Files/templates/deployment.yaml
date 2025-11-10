@@ -44,7 +44,7 @@ spec:
     metadata:
       labels:
         app: {{.Values.name}}
-        json: {{.Values.myjsonval}}
+        json: {{.Values.myjsonval | quote }}
     spec:
       {{- if .Values.dockercfg}}
       imagePullSecrets:
