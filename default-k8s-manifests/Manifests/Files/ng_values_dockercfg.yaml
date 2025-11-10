@@ -7,6 +7,8 @@ dockercfg: <+artifact.imagePullSecret>
 createNamespace: true
 namespace: <+infra.namespace>
 
+myjsonval: <+configFile.getAsBase64('myjson')>
+
 # Service Type allow you to specify what kind of service you want.
 # Possible values for ServiceType are:
 # ClusterIP | NodePort | LoadBalancer | ExternalName
