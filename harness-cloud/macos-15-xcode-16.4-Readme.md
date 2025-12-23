@@ -149,54 +149,54 @@
 - PSScriptAnalyzer: 1.24.0
 
 ### Xcode
-| Version        | Build  | Path                                   | Symlinks                                                  |
-| -------------- | ------ | -------------------------------------- | --------------------------------------------------------- |
-| 26.0           | 17A324 | /Applications/Xcode_26.0_Universal.app | /Applications/Xcode_26.0.0.app                            |
-| 16.4           | 16F6   | /Applications/Xcode_16.4.app           | /Applications/Xcode_16.4.0.app                            |
-| 16.3 (default) | 16E140 | /Applications/Xcode_16.3.app           | /Applications/Xcode_16.3.0.app<br>/Applications/Xcode.app |
+| Version        | Build  | Path                           | Symlinks                                                  |
+| -------------- | ------ | ------------------------------ | --------------------------------------------------------- |
+| 26.0.1         | 17A400 | /Applications/Xcode_26.0.1.app |                                                           |
+| 16.4 (default) | 16F6   | /Applications/Xcode_16.4.app   | /Applications/Xcode_16.4.0.app<br>/Applications/Xcode.app |
+| 16.3           | 16E140 | /Applications/Xcode_16.3.app   | /Applications/Xcode_16.3.0.app                            |
 
 #### Installed SDKs
 | SDK                       | SDK Name             | Xcode Version |
 | ------------------------- | -------------------- | ------------- |
 | macOS 15.4                | macosx15.4           | 16.3          |
 | macOS 15.5                | macosx15.5           | 16.4          |
-| macOS 26.0                | macosx26.0           | 26.0          |
+| macOS 26.0                | macosx26.0           | 26.0.1        |
 | iOS 18.4                  | iphoneos18.4         | 16.3          |
 | iOS 18.5                  | iphoneos18.5         | 16.4          |
-| iOS 26.0                  | iphoneos26.0         | 26.0          |
+| iOS 26.0                  | iphoneos26.0         | 26.0.1        |
 | Simulator - iOS 18.4      | iphonesimulator18.4  | 16.3          |
 | Simulator - iOS 18.5      | iphonesimulator18.5  | 16.4          |
-| Simulator - iOS 26.0      | iphonesimulator26.0  | 26.0          |
+| Simulator - iOS 26.0      | iphonesimulator26.0  | 26.0.1        |
 | tvOS 18.4                 | appletvos18.4        | 16.3          |
 | tvOS 18.5                 | appletvos18.5        | 16.4          |
-| tvOS 26.0                 | appletvos26.0        | 26.0          |
+| tvOS 26.0                 | appletvos26.0        | 26.0.1        |
 | Simulator - tvOS 18.4     | appletvsimulator18.4 | 16.3          |
 | Simulator - tvOS 18.5     | appletvsimulator18.5 | 16.4          |
-| Simulator - tvOS 26.0     | appletvsimulator26.0 | 26.0          |
+| Simulator - tvOS 26.0     | appletvsimulator26.0 | 26.0.1        |
 | watchOS 11.4              | watchos11.4          | 16.3          |
 | watchOS 11.5              | watchos11.5          | 16.4          |
-| watchOS 26.0              | watchos26.0          | 26.0          |
+| watchOS 26.0              | watchos26.0          | 26.0.1        |
 | Simulator - watchOS 11.4  | watchsimulator11.4   | 16.3          |
 | Simulator - watchOS 11.5  | watchsimulator11.5   | 16.4          |
-| Simulator - watchOS 26.0  | watchsimulator26.0   | 26.0          |
+| Simulator - watchOS 26.0  | watchsimulator26.0   | 26.0.1        |
 | visionOS 2.4              | xros2.4              | 16.3          |
 | visionOS 2.5              | xros2.5              | 16.4          |
-| visionOS 26.0             | xros26.0             | 26.0          |
+| visionOS 26.0             | xros26.0             | 26.0.1        |
 | Simulator - visionOS 2.4  | xrsimulator2.4       | 16.3          |
 | Simulator - visionOS 2.5  | xrsimulator2.5       | 16.4          |
-| Simulator - visionOS 26.0 | xrsimulator26.0      | 26.0          |
+| Simulator - visionOS 26.0 | xrsimulator26.0      | 26.0.1        |
 | DriverKit 24.4            | driverkit24.4        | 16.3          |
 | DriverKit 24.5            | driverkit24.5        | 16.4          |
-| DriverKit 25.0            | driverkit25.0        | 26.0          |
+| DriverKit 25.0            | driverkit25.0        | 26.0.1        |
 
 #### Installed Simulators
 | OS           | Simulators                                                                                                                                                                                                               |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| iOS 18.4     | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPad (A16)<br>iPad Air 11-inch (M3)<br>iPad Air 13-inch (M3)<br>iPad mini (A17 Pro)<br>iPad Pro 11-inch (M4)<br>iPad Pro 13-inch (M4) |
 | iOS 18.6     | iPhone 16<br>iPhone 16 Plus<br>iPhone 16 Pro<br>iPhone 16 Pro Max<br>iPhone 16e<br>iPad (A16)<br>iPad Air 11-inch (M3)<br>iPad Air 13-inch (M3)<br>iPad mini (A17 Pro)<br>iPad Pro 11-inch (M4)<br>iPad Pro 13-inch (M4) |
-| tvOS 18.4    | Apple TV<br>Apple TV 4K (3rd generation)<br>Apple TV 4K (3rd generation) (at 1080p)                                                                                                                                      |
-| watchOS 11.4 | Apple Watch SE (40mm) (2nd generation)<br>Apple Watch SE (44mm) (2nd generation)<br>Apple Watch Series 10 (42mm)<br>Apple Watch Series 10 (46mm)<br>Apple Watch Ultra 2 (49mm)                                           |
-| visionOS 2.4 | Apple Vision Pro                                                                                                                                                                                                         |
+| iOS 26.0     | iPhone 16e<br>iPhone 17<br>iPhone 17 Pro<br>iPhone 17 Pro Max<br>iPhone Air<br>iPad (A16)<br>iPad Air 11-inch (M3)<br>iPad Air 13-inch (M3)<br>iPad mini (A17 Pro)<br>iPad Pro 11-inch (M4)<br>iPad Pro 13-inch (M4)     |
+| tvOS 18.5    | Apple TV<br>Apple TV 4K (3rd generation)<br>Apple TV 4K (3rd generation) (at 1080p)                                                                                                                                      |
+| watchOS 11.5 | Apple Watch SE (40mm) (2nd generation)<br>Apple Watch SE (44mm) (2nd generation)<br>Apple Watch Series 10 (42mm)<br>Apple Watch Series 10 (46mm)<br>Apple Watch Ultra 2 (49mm)                                           |
+| visionOS 2.5 | Apple Vision Pro                                                                                                                                                                                                         |
 
 ### Android
 | Package Name               | Version                                                                                                                                                                                                                                                                                                                                                                     |
