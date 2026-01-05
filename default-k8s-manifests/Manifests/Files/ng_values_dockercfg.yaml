@@ -24,6 +24,6 @@ serviceTargetPort: 80
 # Both are added to the container environment in podSpec as envFrom source.
 env:
   config:
-    key1: <+pipeline.varaibles.infra>
+    key1: <+pipeline.variables.infra>
   secrets:
     key2: <+serviceVariables.dynamic_name>
