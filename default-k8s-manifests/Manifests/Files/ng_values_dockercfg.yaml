@@ -1,7 +1,7 @@
 name: harness-quickstart
 replicas: 1
 
-image:  <+serviceVariables.dynamic_name>
+image:  <+artifact.image>
 dockercfg: <+artifact.imagePullSecret1>
 
 createNamespace: true
