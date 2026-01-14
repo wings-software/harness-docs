@@ -26,4 +26,4 @@ env:
   config:
     key1: <+pipeline.variables.infra>
   secrets:
-    key2: <+serviceVariables.dynamic_name>
+    key2: <+serviceVariables.failed_test>
