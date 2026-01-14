@@ -26,4 +26,4 @@ env:
   config:
     key1: <+serviceVariables.dynamic_name>
   secrets:
-    key2: <+serviceVariables.dynamic_name>
+    key2: <+serviceVariables.dynamic_name_2>
