@@ -24,10 +24,10 @@ spec:
         - name: ALT_GREETING
           valueFrom:
             configMapKeyRef:
-              name: the-map
+              name: app-config
               key: altGreeting
         - name: ENABLE_RISKY
           valueFrom:
             configMapKeyRef:
-              name: the-map
+              name: app-config
               key: enableRisky
