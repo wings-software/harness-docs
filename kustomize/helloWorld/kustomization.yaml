@@ -11,7 +11,7 @@ resources:
 configMapGenerator:
   - name: app-config
     files:
-      - /tmp/manifest.json
+      - manifest.json
 
 generatorOptions:
   disableNameSuffixHash: true
