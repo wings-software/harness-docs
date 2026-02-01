@@ -7,4 +7,4 @@ spec:
     spec:
       containers:
         - name: the-container
-          image: <+artifact.image>
+          image: <+artifacts.primary.image>
