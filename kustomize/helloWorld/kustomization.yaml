@@ -8,10 +8,13 @@ resources:
   - deployment.yaml
   - service.yaml
 
+patchesStrategicMerge:
+  - deploymentpatch.yaml
+
 configMapGenerator:
   - name: app-config
     files:
-      - manifest.json
+      - appsettings.json
 
 generatorOptions:
   disableNameSuffixHash: true
