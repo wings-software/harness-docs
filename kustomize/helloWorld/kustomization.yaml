@@ -9,7 +9,7 @@ resources:
   - service.yaml
 
 patchesStrategicMerge:
-  - deploymentpatch.yaml
+  - patches/deploymentpatch.yaml
 
 configMapGenerator:
   - name: app-config
