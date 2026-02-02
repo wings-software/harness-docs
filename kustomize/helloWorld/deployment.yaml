@@ -14,7 +14,6 @@ spec:
     spec:
       containers:
       - name: the-container
-        image: alpine
         command: ["/hello",
                   "--port=8080",
                   "--enableRiskyFeature=$(ENABLE_RISKY)"]
