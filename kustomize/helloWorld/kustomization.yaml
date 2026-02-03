@@ -8,8 +8,8 @@ resources:
   - deployment.yaml
   - service.yaml
 
-patchesStrategicMerge:
-  - patches/deploymentpatch.yaml
+patches:
+  - path: patches/deploymentpatch.yaml
 
 configMapGenerator:
   - name: app-config
