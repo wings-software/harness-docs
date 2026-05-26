@@ -107,6 +107,8 @@
 | 8.0.352+8           | Eclipse Temurin | JAVA_HOME_8_X64      |
 | 11.0.17+8 (default) | Eclipse Temurin | JAVA_HOME_11_X64     |
 | 17.0.5+8            | Eclipse Temurin | JAVA_HOME_17_X64     |
+| 21.0.7+6            | Eclipse Temurin | JAVA_HOME_21_X64     |
+| 25.0.3+9            | Eclipse Temurin | JAVA_HOME_25_X64     |
 
 ### GraalVM
 | Version   | Environment variables |

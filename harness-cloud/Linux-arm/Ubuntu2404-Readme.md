@@ -109,6 +109,7 @@ to accomplish this.
 | 11.0.27+6                                                              |
 | 17.0.15+6 (default)                                                    |
 | 21.0.7+6                                                               |
+| 25.0.3+9                                                               |
 
 ### PHP Tools
 - PHP: 8.3.6

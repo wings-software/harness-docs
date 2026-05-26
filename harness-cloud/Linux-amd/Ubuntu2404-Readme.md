@@ -120,6 +120,7 @@ to add it.
 | 11.0.27+6           | JAVA_HOME_11_X64     |
 | 17.0.15+6 (default) | JAVA_HOME_17_X64     |
 | 21.0.7+6            | JAVA_HOME_21_X64     |
+| 25.0.3+9            | JAVA_HOME_25_X64     |
 
 ### PHP Tools
 

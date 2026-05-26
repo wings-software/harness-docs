@@ -121,6 +121,8 @@ to accomplish this.
 | 8.0.345+1           | Eclipse Temurin | JAVA_HOME_8_X64      |
 | 11.0.16+1 (default) | Eclipse Temurin | JAVA_HOME_11_X64     |
 | 17.0.4+1            | Eclipse Temurin | JAVA_HOME_17_X64     |
+| 21.0.7+6            | Eclipse Temurin | JAVA_HOME_21_X64     |
+| 25.0.3+9            | Eclipse Temurin | JAVA_HOME_25_X64     |
 
 ### GraalVM
 | Version   | Environment variables |
