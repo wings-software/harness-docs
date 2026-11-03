@@ -1,6 +1,6 @@
 # Windows Server 2022
 - OS Version: 10.0.20348 Build 2031
-- Image Version: 20231024.1.0
+- Image Version: 20261030.1.0
 
 ## Windows features
 - Windows Subsystem for Linux (WSLv1): Enabled
@@ -8,29 +8,29 @@
 ## Installed Software
 
 ### Language and Runtime
-- Bash 5.2.15(1)-release
-- Go 1.20.10
+- Bash 5.3.15(2)-release
+- Go 1.26.10
 - Julia 1.9.3
 - Kotlin 1.9.10
 - LLVM 16.0.6
-- Node 18.18.2
-- Perl 5.32.1
+- Node 22.23.4
+- Perl 5.38.0
 - PHP 8.2.11
-- Python 3.9.13
-- Ruby 3.0.6p216
+- Python 3.12.10
+- Ruby 3.3.13
 
 ### Package Management
 - Chocolatey 2.2.2
 - Composer 2.6.5
 - Helm 3.13.0
-- Miniconda 23.9.0 (pre-installed on the image but not added to PATH)
-- NPM 9.8.1
+- Miniconda 26.9.4 (pre-installed on the image but not added to PATH)
+- NPM 10.9.9
 - NuGet 6.7.0.127
-- pip 23.3.1 (python 3.9)
-- Pipx 1.2.1
-- RubyGems 3.2.33
-- Vcpkg (build from commit 7a6f366ce)
-- Yarn 1.22.19
+- pip 26.2.2 (python 3.12)
+- Pipx 1.18.11
+- RubyGems 3.5.22
+- Vcpkg (build from commit 5c82f7e63)
+- Yarn 1.22.22
 
 #### Environment variables
 | Name                    | Value        |
@@ -42,26 +42,26 @@
 - Ant 1.10.14
 - Gradle 8.4
 - Maven 3.8.7
-- sbt 1.9.7
+- sbt 1.9.6
 
 ### Tools
 - 7zip 23.01
 - aria2 1.36.0
 - azcopy 10.21.0
-- Bazel 6.4.0
+- Bazel 9.3.1
 - Bazelisk 1.18.0
 - Bicep 0.22.6
 - Cabal 3.10.1.0
-- CMake 3.27.7
-- CodeQL Action Bundle 2.15.1
-- Docker 24.0.6
+- CMake 3.26.4
+- CodeQL Action Bundle 2.15.0
+- Docker 29.9.2
 - Docker Compose v1 1.29.2
-- Docker Compose v2 2.23.0
+- Docker Compose v2 5.6.1
 - Docker-wincred 0.8.0
 - ghc 9.8.1
-- Git 2.42.0.windows.2
-- Git LFS 3.4.0
-- ImageMagick 7.1.1-21
+- Git 2.56.0.windows.4
+- Git LFS 3.8.1
+- ImageMagick 7.1.1-20
 - InnoSetup 6.2.2
 - jq 1.7-dirty
 - Kind 0.20.0
@@ -70,11 +70,11 @@
 - gcc 12.2.0
 - gdb 11.2
 - GNU Binutils 2.39
-- Newman 6.0.0
+- Newman 6.2.3
 - NSIS 3.08
 - OpenSSL 1.1.1w
 - Packer 1.9.4
-- Pulumi 3.90.0
+- Pulumi 3.89.0
 - R 4.3.1
 - Service Fabric SDK 9.1.1436.9590
 - Stack 2.13.1
@@ -83,39 +83,39 @@
 - VSWhere 3.1.7
 - WinAppDriver 1.2.2009.02003
 - WiX Toolset 3.11.2.4516
-- yamllint 1.32.0
+- yamllint 1.38.0
 - zstd 1.5.5
 
 ### CLI Tools
-- Alibaba Cloud CLI 3.0.184
-- AWS CLI 2.13.28
-- AWS SAM CLI 1.99.0
+- Alibaba Cloud CLI 3.0.183
+- AWS CLI 2.39.3
+- AWS SAM CLI 1.171.0
 - AWS Session Manager CLI 1.2.497.0
-- Azure CLI 2.53.1
-- Azure DevOps CLI extension 0.26.0
-- GitHub CLI 2.37.0
+- Azure CLI 2.91.0
+- Azure DevOps CLI extension 1.0.10
+- GitHub CLI 2.103.3
 
 ### Rust Tools
 - Cargo 1.73.0
 - Rust 1.73.0
 - Rustdoc 1.73.0
-- Rustup 1.26.0
+- Rustup 1.29.2
 
 #### Packages
 - bindgen 0.68.1
-- cargo-audit 0.18.3
+- cargo-audit 0.18.2
 - cargo-outdated 0.13.1
 - cbindgen 0.26.0
 - Clippy 0.1.73
 - Rustfmt 1.6.0
 
 ### Browsers and Drivers
-- Google Chrome 118.0.5993.118
-- Chrome Driver 118.0.5993.70
-- Microsoft Edge 118.0.2088.61
-- Microsoft Edge Driver 118.0.2088.61
-- Mozilla Firefox 119.0
-- Gecko Driver 0.33.0
+- Google Chrome 156.0.8078.80
+- Chrome Driver 156.0.8078.80
+- Microsoft Edge 156.0.4314.58
+- Microsoft Edge Driver 156.0.4314.58
+- Mozilla Firefox 159.0
+- Gecko Driver 0.37.1
 - IE Driver 4.14.0.0
 - Selenium server 4.14.0
 
@@ -130,10 +130,9 @@
 ### Java
 | Version             | Environment Variable |
 | ------------------- | -------------------- |
-| 8.0.392+8 (default) | JAVA_HOME_8_X64      |
-| 11.0.21+9           | JAVA_HOME_11_X64     |
+| 8.0.382+5 (default) | JAVA_HOME_8_X64      |
+| 11.0.20+101         | JAVA_HOME_11_X64     |
 | 17.0.8+101          | JAVA_HOME_17_X64     |
-| 21.0.0+35.0         | JAVA_HOME_21_X64     |
 
 ### Shells
 | Name          | Target                            |
@@ -155,35 +154,26 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 ### Cached Tools
 
 #### Go
-- 1.19.13
-- 1.20.10
-- 1.21.3
+- 1.26.10
+- 1.27.3
 
 #### Node.js
-- 14.21.3
-- 16.20.2
-- 18.18.2
-- 20.8.1
+- 22.23.4
+- 24.22.2
 
 #### Python
-- 3.7.9
-- 3.8.10
-- 3.9.13
-- 3.10.11
-- 3.11.6
-- 3.12.0
+- 3.11.9
+- 3.12.10
+- 3.13.17
+- 3.14.10
+- 3.15.2
 
 #### PyPy
-- 2.7.18 [PyPy 7.3.13]
-- 3.7.13 [PyPy 7.3.9]
-- 3.8.16 [PyPy 7.3.11]
-- 3.9.18 [PyPy 7.3.13]
 - 3.10.13 [PyPy 7.3.13]
 
 #### Ruby
-- 2.7.8
-- 3.0.6
-- 3.1.4
+- 3.3.13
+- 3.4.12
 
 ### Databases
 
@@ -202,13 +192,13 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 #### MongoDB
 | Version  | ServiceName | ServiceStatus | ServiceStartType |
 | -------- | ----------- | ------------- | ---------------- |
-| 5.0.21.0 | MongoDB     | Stopped       | Disabled         |
+| 5.0.22.0 | MongoDB     | Stopped       | Disabled         |
 
 ### Database tools
 - Azure CosmosDb Emulator 2.14.12.0
-- DacFx 162.1.167.1
+- DacFx 162.0.52.1
 - MySQL 8.0.34.0
-- SQL OLEDB Driver 18.6.7.0
+- SQL OLEDB Driver 18.6.4.0
 - SQLPS 1.0
 
 ### Web Servers
@@ -218,9 +208,9 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | Nginx  | 1.25.2  | C:\tools\nginx-1.25.2\conf\nginx.conf | nginx       | Stopped       | 80         |
 
 ### Visual Studio Enterprise 2022
-| Name                          | Version       | Path                                                     |
-| ----------------------------- | ------------- | -------------------------------------------------------- |
-| Visual Studio Enterprise 2022 | 17.7.34221.43 | C:\Program Files\Microsoft Visual Studio\2022\Enterprise |
+| Name                          | Version        | Path                                                     |
+| ----------------------------- | -------------- | -------------------------------------------------------- |
+| Visual Studio Enterprise 2022 | 17.7.34202.233 | C:\Program Files\Microsoft Visual Studio\2022\Enterprise |
 
 #### Workloads, components and extensions
 | Package                                                                   | Version         |
@@ -297,9 +287,9 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | microsoft.net.runtime.mono.tooling.net6                                   | 7.0.1223.47720  |
 | microsoft.net.sdk.emscripten.net7                                         | 7.0.8.43102     |
 | Microsoft.NetCore.Component.DevelopmentTools                              | 17.7.33905.399  |
-| Microsoft.NetCore.Component.Runtime.6.0                                   | 17.7.34221.43   |
-| Microsoft.NetCore.Component.Runtime.7.0                                   | 17.7.34221.43   |
-| Microsoft.NetCore.Component.SDK                                           | 17.7.34221.43   |
+| Microsoft.NetCore.Component.Runtime.6.0                                   | 17.7.34202.233  |
+| Microsoft.NetCore.Component.Runtime.7.0                                   | 17.7.34202.233  |
+| Microsoft.NetCore.Component.SDK                                           | 17.7.34202.233  |
 | Microsoft.NetCore.Component.Web                                           | 17.7.33905.399  |
 | Microsoft.VisualStudio.Component.AppInsights.Tools                        | 17.7.33905.399  |
 | Microsoft.VisualStudio.Component.AspNet                                   | 17.7.33905.399  |
@@ -551,15 +541,15 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 - 10.0.22621.0
 
 ### .NET Core Tools
-- .NET Core SDK: 6.0.124, 6.0.203, 6.0.319, 6.0.416, 7.0.403
+- .NET Core SDK: 6.0.123, 6.0.203, 6.0.318, 6.0.415, 7.0.402
 - .NET Framework: 4.8, 4.8.1
-- Microsoft.AspNetCore.App: 6.0.5, 6.0.23, 6.0.24, 7.0.13
-- Microsoft.NETCore.App: 6.0.5, 6.0.23, 6.0.24, 7.0.13
-- Microsoft.WindowsDesktop.App: 6.0.5, 6.0.24, 7.0.13
+- Microsoft.AspNetCore.App: 6.0.5, 6.0.23, 7.0.12
+- Microsoft.NETCore.App: 6.0.5, 6.0.23, 7.0.12
+- Microsoft.WindowsDesktop.App: 6.0.5, 6.0.23, 7.0.12
 - nbgv 3.6.133+2d32d93cb1
 
 ### PowerShell Tools
-- PowerShell 7.2.15
+- PowerShell 7.3.8
 
 #### Powershell Modules
 - Az: 9.3.0
@@ -568,10 +558,10 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 - Az (Cached): 7.5.0.zip
 - Azure (Cached): 3.8.0.zip, 4.2.1.zip, 5.1.1.zip
 - AzureRM (Cached): 3.8.0.zip, 4.2.1.zip, 5.1.1.zip, 6.7.0.zip
-- AWSPowershell: 4.1.436
+- AWSPowershell: 4.1.432
 - DockerMsftProvider: 1.0.0.8
 - MarkdownPS: 1.9
-- Microsoft.Graph: 2.8.0
+- Microsoft.Graph: 2.6.1
 - Pester: 3.4.0, 5.5.0
 - PowerShellGet: 1.0.0.1, 2.2.5
 - PSScriptAnalyzer: 1.21.0
