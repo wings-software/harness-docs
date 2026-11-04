@@ -31,7 +31,7 @@
 - Carthage 0.40.0
 - CocoaPods 1.16.2
 - Composer command
-- Homebrew 5.1.12
+- Homebrew 7.0.11
 - NPM 10.9.8
 - NuGet command
 - Pip3 26.1.1 (python 3.14)
@@ -50,7 +50,7 @@
 - aria2 1.37.0
 - azcopy 10.32.4
 - bazel 9.3.1
-- bazelisk ✔︎ JSON API formula_tap_migrations.jws.json ✔︎ JSON API cask_tap_migrations.jws.json 1.29.0
+- bazelisk 1.29.0
 - bsdtar 3.5.3 - available by 'tar' alias
 - Curl 8.7.1
 - Git 2.54.0
@@ -60,7 +60,7 @@
 - GNU Wget 1.25.0
 - gpg (GnuPG) 2.5.20
 - jq 1.8.1
-- OpenSSL 1.1.1w  11 Sep 2023
+- OpenSSL 4.1.0 23 Oct 2026 (Library: OpenSSL 4.1.0 23 Oct 2026)
 - Packer 1.15.3
 - pkgconf 2.5.1
 - Unxip 3.3
@@ -72,13 +72,14 @@
 - AWS CLI 2.34.49
 - AWS SAM CLI 1.160.1
 - AWS Session Manager CLI 1.2.814.0
-- Azure CLI 2.86.0
+- Azure CLI 2.91.0
 - Azure CLI (azure-devops) 1.0.4
 - Bicep CLI 0.43.8
 - Cmake 4.3.2
 - CodeQL Action Bundle 2.25.4
 - Fastlane 2.234.0
 - SwiftFormat 0.61.1
+- Tailscale 1.104.4
 - Xcbeautify 3.2.1
 - Xcode Command Line Tools 26.5.0.0.1777544298
 - Xcodes 1.6.2
@@ -86,12 +87,12 @@
 ### Browsers
 - Safari 26.5 (21624.2.5.11.4)
 - SafariDriver 26.5 (21624.2.5.11.4)
-- Google Chrome 148.0.7778.168
-- Google Chrome for Testing 148.0.7778.167
-- ChromeDriver 148.0.7778.167
-- Microsoft Edge 148.0.3967.70
+- Google Chrome 156.0.8078.74
+- Google Chrome for Testing 156.0.8078.73
+- ChromeDriver 156.0.8078.73
+- Microsoft Edge 156.0.4314.50
 - Microsoft Edge WebDriver 148.0.3967.70
-- Mozilla Firefox 150.0.3
+- Mozilla Firefox 159.0
 - geckodriver 0.36.0
 - Selenium server 4.44.0
 
@@ -125,10 +126,8 @@
 - 3.14.5
 
 #### Node.js
-- 18.20.8
-- 20.20.2
-- 22.22.3
-- 24.15.0
+- 22.23.4
+- 24.22.1
 
 #### Go
 - 1.22.12
